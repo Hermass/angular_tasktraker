@@ -1,1 +1,16 @@
-<p>task-item works!</p>
+
+<div class="card text-bg-info mb-3 ">
+    <div class="card-header">
+        {{ task.title}}
+       <fa-icon [icon]="faTimes"></fa-icon>
+    </div>
+    <div class="card-body">
+        <ul >
+            <li class="list-group-item">{{ task.description}}</li>
+            <li class="list-group-item"><i>{{ task.status}}</i></li>
+            <li class="list-group-item">{{ task.due_date}}</li>
+        </ul>
+    </div>
+</div>
+
+    
