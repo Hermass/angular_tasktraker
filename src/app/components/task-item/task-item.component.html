@@ -2,7 +2,7 @@
 <div class="card text-bg-info mb-3 ">
     <div class="card-header">
         {{ task.title}}
-       <fa-icon [icon]="faTimes"></fa-icon>
+       <div class="pull-right p-2" (click)="onDelete()" > <fa-icon [icon]="faTimes"></fa-icon> </div>
     </div>
     <div class="card-body">
         <ul >
