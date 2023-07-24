@@ -1,0 +1,27 @@
+
+<div class="card w-50">
+    <div class="card-body">
+        <form (ngSubmit)="onSubmit()">
+    <div class="mb-3 mt-4">
+        <label for="formGroupExampleInput" class="form-label">Tasks</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Add Tasks" [(ngModel)]="text" name="text">
+    </div>
+    <div class="mb-3 mt-4">
+        <label for="formGroupExampleInput" class="form-label">Date / Time</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Add Date and Time" [(ngModel)]="day" name="day"> 
+    </div>
+    <div class="mb-3 mt-4">
+
+        <label for="formGroupExampleInput" class="form-label">Set Remind</label>
+        <input type="checkbox" id="formGroupExampleInput" [(ngModel)]="reminder" name="reminder"> 
+    </div>
+
+   
+    <p>{{ text }}</p>
+    <button type="submit" class="btn btn-lg btn-primary" >Sava Tasks</button>
+
+</form>
+</div>
+</div>
+
+

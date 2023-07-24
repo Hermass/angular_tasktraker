@@ -23,6 +23,13 @@ export class TasksComponent {
     this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
   }
 
+  //For Add Task Logic
+
+  addTask(task: Task){
+    console.log(task)
+    this.taskService.addTask(task).subscribe((task) => (this.tasks.push(task)));
+  }
+  //For Delete Logic
   deleteTask(task: Task){
     this.taskService
     .deleteTask(task)

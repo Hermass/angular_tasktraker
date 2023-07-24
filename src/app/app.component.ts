@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tasktracker';
+
+  childData !: string;
+  parentMethod(data){
+    this.childData = data;
+  }
 }
